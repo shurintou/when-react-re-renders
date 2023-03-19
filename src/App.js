@@ -1,4 +1,4 @@
-import SimpleCase from '../src/components/SimplestCase/fatherComponent'
+import SimpleCase from './components/SimpleCase/fatherComponent'
 import React from 'react'
 
 function App() {
