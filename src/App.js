@@ -1,6 +1,7 @@
 import SimpleCase from './components/SimpleCase/fatherComponent'
 import ImpureComponent from './components/ImpureComponent/fatherComponent'
 import PureComponent from './components/PureComponent/fatherComponent'
+import PCWithPrimitiveProp from './components/PCWithPrimitiveProp/fatherComponent'
 import React from 'react'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <SimpleCase />
       <ImpureComponent />
       <PureComponent />
+      <PCWithPrimitiveProp />
     </div>
   )
 }
