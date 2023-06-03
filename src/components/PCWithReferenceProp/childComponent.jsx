@@ -5,7 +5,7 @@ const ChildComponent = (props) => {
     return (
         <div className={'child'} style={{ marginTop: '5px', marginLeft: '75px' }}>
             <p>child</p>
-            <p>father's num {props.fatherNum}</p>
+            <p>father's num {props.father.num}</p>
             <p>{new Date().toUTCString().split(',')[1]}</p>
         </div>
     )
