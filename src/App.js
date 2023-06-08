@@ -3,6 +3,7 @@ import ImpureComponent from './components/ImpureComponent/fatherComponent'
 import PureComponent from './components/PureComponent/fatherComponent'
 import PCWithPrimitiveProp from './components/PCWithPrimitiveProp/fatherComponent'
 import PCWithReferenceProp from './components/PCWithReferenceProp/fatherComponent'
+import ReactMemoWithArePropsEqual from './components/ReactMemoWithArePropsEqual/fatherComponent'
 import React from 'react'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <PureComponent />
       <PCWithPrimitiveProp />
       <PCWithReferenceProp />
+      <ReactMemoWithArePropsEqual />
     </div>
   )
 }
