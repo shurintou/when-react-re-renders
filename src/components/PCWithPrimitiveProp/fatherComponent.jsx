@@ -5,14 +5,14 @@ const FatherComponent = () => {
     console.log('FatherComponent function was called.')
 
     const [num, setNum] = useState(0)
-    const [anotherNum, setAnotherNum] = useState(0)
+    const [another, setanother] = useState(0)
 
     return (
         <div className={'father'}>
             <p>PCWithPrimitiveProp</p>
-            <p>father's number is {num}, anotherNum is {anotherNum}</p>
+            <p>father's number is {num}, another is {another}</p>
             <button onClick={() => setNum(num + 1)}>click to add num</button>
-            <button onClick={() => setAnotherNum(anotherNum + 1)}>click to add anotherNum</button>
+            <button onClick={() => setanother(another + 1)}>click to add another</button>
             <ChildComponent fatherNum={num} />
         </div>
     )

@@ -4,14 +4,14 @@ import ChildComponent from './childComponent'
 const FatherComponent = () => {
     console.log('FatherComponent function was called.')
 
-    const [father, setFather] = useState({ num: 0, anotherNum: 0 })
+    const [father, setFather] = useState({ num: 0, another: 0 })
 
     return (
         <div className={'father'}>
             <p>PCWithReferenceProp</p>
-            <p>father's number is {father.num}, anotherNum is {father.anotherNum}</p>
-            <button onClick={() => setFather({ num: father.num + 1, anotherNum: father.anotherNum })}>click to add num</button>
-            <button onClick={() => setFather({ num: father.num, anotherNum: father.anotherNum + 1 })}>click to add anotherNum</button>
+            <p>father's number is {father.num}, another is {father.another}</p>
+            <button onClick={() => setFather({ num: father.num + 1, another: father.another })}>click to add num</button>
+            <button onClick={() => setFather({ num: father.num, another: father.another + 1 })}>click to add another</button>
             <ChildComponent father={father} />
         </div>
     )
